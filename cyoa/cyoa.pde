@@ -18,21 +18,19 @@ float bL = 100;  // y-coordinate of left box
 float cL = 100;  // width of left box
 float dL = 100;  // height of left box
 
-float aR = 350;  // x-coordinate of left box
-float bR = 100;  // y-coordinate of left box
-float cR = 100;  // width of left box
-float dR = 100;   // height of left box
+float aR = 350;  // x-coordinate of right box
+float bR = 100;  // y-coordinate of right box
+float cR = 100;  // width of right box
+float dR = 100;  // height of right box
 
 // This class describes a "page" or situation in our Choose-Your-Own-Adventure story. We have two choices on each 
 // page which lead us to a different page
 public class Page {
 
   color   clr;
-  boolean isLeftBox;
 
   // These are the two next pages you can get to from this page
-  Page leftChild;
-  Page rightChild;
+  Page leftChild, rightChild;
 
   // Class constructor
   Page( color InitColor, Page Left, Page Right ) {
